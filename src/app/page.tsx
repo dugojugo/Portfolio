@@ -184,6 +184,17 @@ export default function About() {
             </Column>
           )}
 
+          <Column marginBottom="xl">
+            <Button
+              href="/work"
+              prefixIcon="folder"
+              suffixIcon="arrowRight"
+              label="View My Projects"
+              size="l"
+              variant="primary"
+            />
+          </Column>
+
           {about.work.display && (
             <>
               <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m">
