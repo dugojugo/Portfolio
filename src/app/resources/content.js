@@ -99,41 +99,70 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Next Lab",
+        timeframe: "March 2024 - May 2025",
+        role: "Lead Software Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Optimized API data processing in Unity using C#, implementing Multithreading, Async Task handling, Coroutines,
+            and Lazy Deserialization to stream and parse JSON from REST APIs of ESRI, achieving 30% runtime efficiency.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Built the Surprise Digital Twin in Unity 3D and C#, rendering real-time 3D models with economic data practicing
+            SOLID principles, custom parsers, and memory-efficient handlers. 
           </>,
+          <>
+           Led geospatial digital twin project with CesiumJS, building UI with Javascript, HTML/CSS practicing lazy loading. 
+        </>,
+        <>
+        As Cloud Guild Lead, containerized a Flask-based ML application using Docker and deployed it on AWS, ensuring
+        scalable and consistent production-ready environments. 
+      </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/project-01/digital-twin-1.jpg",
+            alt: "Surprise Digital Twin - Data Representation",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/digital-twin-2.png",
+            alt: "Surprise Digital Twin - 3D Experience",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Collimation LLC",
+        timeframe: "July 2024 – September 2024",
+        role: "Game Developer Intern",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+             Designed immersive VR experiences in Unity 3D with Inworld AI, fine-tuned LLMs for more natural and
+             context-aware NPC dialogues, and conducted iterative testing and heuristic evaluations to ensure seamless flow.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+             Built ML-enhanced object detection models with OpenCV, integrating them into Unity 3D via Python-based
+             inference and C# scripting.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "FIS Global Business Solutions",
+        timeframe: "September 2022 – December 2022",
+        role: "Software Developer Intern",
+        achievements: [
+          <>
+             Developed a 3D banking system in the metaverse with real-time transactions, video calls, and NLP-driven Wit.AI
+             agent for customer interaction, and Postman to test and validate APIs, ensuring secure, efficient communication.
+         </>,
+          <>
+             Developed and tested secure backend logic in C# for transaction processing, incorporating automated API security
+             test scripts to ensure data integrity and compliance.
           </>,
         ],
         images: [],
