@@ -1,0 +1,60 @@
+---
+title: "PythonVulnbrDetect: ML-Based Python Vulnerability Detection"
+publishedAt: "2024-12-01"
+summary: "Developed an ML pipeline to detect vulnerabilities in Python code using NLP, decision trees, and deep learning models like LSTM — achieving 89% accuracy through feature engineering and clustering techniques."
+images:
+  - "/images/projects/project-09/py-1.png"
+  - "/images/projects/project-09/py-2.png"
+  - "/images/projects/project-09/py-3.png"
+  - "/images/projects/project-09/py-4.png"
+team:
+  - name: "Viresh Bhurke"
+    role: "ML Engineer & Research Contributor"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/vireshbhurke/"
+link: "https://github.com/dugojugo/PythonVulnbrDetect"
+---
+
+## Overview
+
+**PythonVulnbrDetect** is a collaborative machine learning project aimed at identifying software vulnerabilities in Python source code using code diff data. Through natural language processing techniques, token vectorization (TF-IDF), and both classical and deep learning models, this system detects unsafe code patterns across seven major categories of vulnerabilities — including SQL injection, XSS, and remote code execution. 
+
+The project involved **data cleaning, feature extraction, model experimentation**, and result visualization, all focused on automating secure code review and vulnerability detection.
+
+## Key Features
+
+- **Data Pipeline from JSON to CSV**: Converted `PyCommitsWithDiffs.json` into structured datasets through a custom parser that extracts meaningful code snippets from diffs and cleans them using regular expressions and pattern matching.
+- **Vulnerability Labeling**: Implemented a rule-based filtering system to tag code snippets into one of **seven security vulnerability classes** (e.g., SQL Injection, XSS, Command Injection).
+- **Feature Engineering**: Used **TF-IDF vectorization**, **fuzzy string ratios**, and **cleaned token sequences** to represent code snippets for ML training.
+- **Multi-Model Training & Comparison**:
+  - Classical ML: KNN, Random Forest, SVM, Naive Bayes, Gradient Boosting, MLP.
+  - Deep Learning: LSTM-based model using Keras with padded sequences and embeddings.
+- **Performance Evaluation**: Achieved **up to 89% accuracy**, with model-specific confusion matrices and training-validation loss/accuracy plots.
+- **CI/CD & TDD Practices**: Adopted testing and modular design practices for reproducible experiments and integration.
+
+## Technologies Used
+
+- **Languages**: Python
+- **Libraries**:
+  - **Machine Learning**: Scikit-learn, Keras, TensorFlow
+  - **Data Processing**: Pandas, NumPy, re
+  - **Visualization**: Matplotlib, Seaborn
+  - **Other Tools**: FuzzyWuzzy, Git, CSV parsing
+- **Models Implemented**:
+  - K-Nearest Neighbors (KNN)
+  - Random Forest Classifier
+  - Support Vector Machine (SVM)
+  - Naive Bayes
+  - Gradient Boosting Classifier
+  - Multi-layer Perceptron (MLP)
+  - LSTM-based Deep Learning Model
+
+## Challenges and Learnings
+
+One of the biggest challenges was **cleaning and transforming raw commit diffs** into useful labeled examples. Regex-based logic had to be fine-tuned to accurately extract vulnerable lines while ignoring noise. Selecting the right combination of features (TF-IDF vectors, fuzzy ratios, etc.) played a key role in model performance. We also learned that **class balancing and domain-specific token handling** is crucial for training deep learning models like LSTMs on code.
+
+## Outcome
+
+This project demonstrated that **automated ML pipelines can aid vulnerability detection** in large codebases. By combining code analysis and clustering techniques, the system offers a scalable way to assist in secure software development. It also forms a strong foundation for integrating into CI pipelines or IDE plugins to warn developers about potential risks in real time.
+
+--- 
