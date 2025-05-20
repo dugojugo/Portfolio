@@ -90,7 +90,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I’m a software engineer with a passion for developing scalable, AI-powered solutions and optimizing cloud infrastructures. My expertise spans full-stack development, machine learning, real-time systems, and AR/VR developement with experience leading geospatial and digital twin projects. I thrive on solving complex challenges and building high-performance applications that drive innovation.
+        I'm a software engineer with a passion for developing scalable, AI-powered solutions and optimizing cloud infrastructures. My expertise spans full-stack development, machine learning, real-time systems, and AR/VR developement with experience leading geospatial and digital twin projects. I thrive on solving complex challenges and building high-performance applications that drive innovation.
       </>
     ),
   },
@@ -145,8 +145,29 @@ const about = {
              context-aware NPC dialogues, and conducted iterative testing and heuristic evaluations to ensure seamless flow.
           </>,
           <>
-             Built ML-enhanced object detection models with OpenCV, integrating them into Unity 3D via Python-based
+             Researched ML-enhanced object detection models with OpenCV, integrating them into Unity 3D via Python-based
              inference and C# scripting.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Arizona State University",
+        timeframe: "September 2023 – October 2023",
+        role: "Student Software Developer",
+        achievements: [
+          <>
+             Utilizing Unity 3D, I developed immersive VR scenes that incorporated innovative technologies like UltraLeap for precise hand tracking and UltraHaptics for touchless haptic feedback. 
+          </>,
+          <>
+             Designed an experience that allowed users to steer a spaceship by moving their hands to dodge oncoming asteroids for an exhilarating ride. 
+          </>,
+          <>
+             Another transported users to a lush garden where they could reach out and interact with plants that would dynamically bend and touch their hands via ultrasonic waves from the haptic device. 
+          </>,
+          <>
+             Across both experiences, I tailored the multi-sensory effects and visual polish to create a fully immersive environment showcasing the future of extended reality. 
+             Demonstrating creativity and technical skills, this project opened my eyes to the possibilities of spatial computing to enhance experiences.
           </>,
         ],
         images: [],
@@ -165,7 +186,48 @@ const about = {
              test scripts to ensure data integrity and compliance.
           </>,
         ],
-        images: [],
+        images: [
+        {
+          src: "/images/projects/project-01/FIS1.png",
+          alt: "Metaverse Banking - Lobby",
+          width: 16,
+          height: 9,
+        },
+        {
+          src: "/images/projects/project-01/FIS6.png",
+          alt: "Metaverse Banking - 2nd Floor",
+          width: 16,
+          height: 9,
+        },
+      ],
+      },
+      {
+        company: "Indroydlab",
+        timeframe: "May 2022 – September 2022",
+        role: "Game Developer Intern",
+        achievements: [
+          <>
+             Built immersive VR 3D ride and arcade games in Unity 3D, focusing on performance and interactive design.
+          </>,
+          <>
+             Engineered Kinect-based motion detection using 3D geometry and the distance formula to accurately track jump
+             height and player motion for responsive in-game interactions.
+          </>,
+        ],
+        images: [
+        {
+          src: "/images/projects/project-01/VR-Ride-1.png",
+          alt: "VR Ride - Halloween Special",
+          width: 16,
+          height: 9,
+        },
+        {
+          src: "/images/projects/project-01/Arcade-Game-1.png",
+          alt: "Arcade Game - Halloween Special",
+          width: 16,
+          height: 9,
+        },
+      ],
       },
     ],
   },
@@ -174,51 +236,134 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Arizona State University",
+        description: <>Masters in Software Engineering - GPA: 4.00/4.00</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Vellore Institute of Technology, Chennai, India",
+        description: <>Bachelors of Technology in Computer Science and Engineering - GPA: 8.31/10.00</>,
       },
+      
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Python",
+        description: <>Confidently build backend scripts and ML models for data analysis, cleaning, clustering, and API-driven automation.</>,
+        proficiency: 5,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "C#",
+        description: <>Build web apps, mobile apps, and games with C# using .NET and Unity 3D for interactive, cross-platform experiences.</>,
+        proficiency: 5,
+        images: [],
       },
+      {
+        title: "Java",
+        description: <>Develop Android apps, desktop GUIs, and secure, cross-platform applications with Java using tools like JavaFX and the Android SDK.</>,
+        proficiency: 4,
+        images: [],
+      },
+      {
+        title: "C/C++",
+        description: <>Build high-performance systems, games, and databases with C/C++, ideal for OS-level programming, game engines, and resource-efficient IoT devices.</>,
+        proficiency: 4,
+        images: [],
+      },
+      {
+        title: "JavaScript",
+        description: <>Craft responsive UIs and geospatial visualizations in the browser.</>,
+        proficiency: 5,
+        images: [],
+      },
+      {
+        title: "HTML/CSS",
+        description: <>Style clean interfaces and build out UIs that just work.</>,
+        proficiency: 5,
+        images: [],
+      },
+      {
+        title: "AWS",
+        description: <>Launch and scale AI models in the cloud with secure setups using Fargate, SageMaker, S3, and IAM.</>,
+        proficiency: 4,
+        images: [],
+      },
+      {
+        title: "Docker",
+        description: <>Containerize apps so they behave exactly how you expect, every time.</>,
+        proficiency: 4,
+        images: [],
+      },
+      {
+        title: "CI/CD",
+        description: <>Automate testing and deployment to move fast without breaking things.</>,
+        proficiency: 4,
+        images: [],
+      },
+      {
+        title: "Unity 3D",
+        description: <>Build immersive worlds with real-time physics, AI agents, and VR training sims.</>,
+        proficiency: 5,
+        images: [],
+      },
+      {
+        title: "Inworld AI",
+        description: <>Make NPCs talk and feel more alive with LLM-powered dialogues.</>,
+        proficiency: 4,
+        images: [],
+      },
+      {
+        title: "OpenCV",
+        description: <>Use computer vision with Python to detect, analyze, and process images efficiently.</>,
+        proficiency: 4,
+        images: [],
+      },
+      {
+        title: "TensorFlow / PyTorch",
+        description: <>Build and train deep learning models for data analysis, prediction, and pattern recognition across images, text, and user behavior.</>,
+        proficiency: 4,
+        images: [],
+      },
+      {
+        title: "Scikit-learn",
+        description: <>Perform fast, interpretable machine learning with clustering, classification, regression, and feature extraction from structured data.</>,
+        proficiency: 5,
+        images: [],
+      },
+      {
+        title: "Pandas",
+        description: <>Clean, transform, and analyze large datasets efficiently using flexible dataframes and intuitive Python syntax.</>,
+        proficiency: 5,
+        images: [],
+      },
+      {
+        title: "CesiumJS",
+        description: <>Build 3D map-based digital twins and real-time spatial experiences.</>,
+        proficiency: 4,
+        images: [],
+      },
+      {
+        title: "React Native",
+        description: <>Build fast, responsive mobile apps with native performance across iOS and Android.</>,
+        proficiency: 3,
+        images: [],
+      },
+      {
+        title: "MySQL",
+        description: <>Design, query, and manage relational databases that power scalable applications.</>,
+        proficiency: 4,
+        images: [],
+      },
+      {
+        title: "MATLAB / R / Linux",
+        description: <>Analyze data, automate workflows, and visualize results in research and scientific computing environments.</>,
+        proficiency: 4,
+        images: [],
+      }
     ],
   },
 };

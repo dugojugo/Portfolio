@@ -56,7 +56,7 @@ export default async function Project({
     })) || [];
 
   return (
-    <Column as="section" maxWidth="m" horizontal="center" gap="l">
+    <Column as="section" horizontal="center" gap="l">
       <Schema
         as="blogPosting"
         baseURL={baseURL}
@@ -78,15 +78,25 @@ export default async function Project({
         </Button>
         <Heading variant="display-strong-s">{post.metadata.title}</Heading>
       </Column>
-      {post.metadata.images.length > 0 && (
-        <SmartImage
-          priority
-          aspectRatio="16 / 9"
-          radius="m"
-          alt="image"
-          src={post.metadata.images[0]}
-        />
-      )}
+      <Column maxWidth="l" fillWidth>
+        {post.metadata.images.length > 0 && (
+          <SmartImage
+            priority
+            aspectRatio="16 / 9"
+            radius="m"
+            alt="image"
+            src={post.metadata.images[0]}
+          />
+        )}
+        {post.metadata.videoLink && (
+          <SmartImage
+            aspectRatio="16 / 9"
+            radius="m"
+            alt="video"
+            src={post.metadata.videoLink}
+          />
+        )}
+      </Column>
       <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
         <Flex gap="12" marginBottom="24" vertical="center">
           {post.metadata.team && <AvatarGroup reverse avatars={avatars} size="m" />}

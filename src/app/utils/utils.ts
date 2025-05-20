@@ -18,6 +18,7 @@ type Metadata = {
   tag?: string;
   team: Team[];
   link?: string;
+  videoLink?: string;
 };
 
 import { notFound } from 'next/navigation';
@@ -47,6 +48,7 @@ function readMDXFile(filePath: string) {
     tag: data.tag || [],
     team: data.team || [],
     link: data.link || "",
+    videoLink: data.videoLink || "",
   };
 
   return { metadata, content };
