@@ -79,15 +79,15 @@ export default async function Project({
         <Heading variant="display-strong-s">{post.metadata.title}</Heading>
       </Column>
       <Column maxWidth="l" fillWidth>
-        {post.metadata.images.length > 0 && (
-          <SmartImage
-            priority
-            aspectRatio="16 / 9"
-            radius="m"
-            alt="image"
-            src={post.metadata.images[0]}
-          />
-        )}
+      {post.metadata.images.length > 0 && (
+        <SmartImage
+          priority
+          aspectRatio="16 / 9"
+          radius="m"
+          alt="image"
+          src={post.metadata.images[0]}
+        />
+      )}
         {post.metadata.videoLink && (
           <SmartImage
             aspectRatio="16 / 9"
