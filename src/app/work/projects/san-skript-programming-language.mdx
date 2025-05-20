@@ -1,0 +1,47 @@
+---
+title: "SanSkript: Custom Programming Language with Python-Prolog Runtime"
+publishedAt: "2024-04-30"
+summary: "Designed and implemented SanSkript, a domain-specific language with a runtime built using Python and SWI Prolog — capable of parsing and executing `.skt` files with support for conditionals, loops, and arithmetic."
+images:
+  - "/images/projects/project-11/prolog-1.png"
+  - "/images/projects/project-11/prolog-2.png"
+  - "/images/projects/project-11/prolog-3.png"
+  - "/images/projects/project-11/prolog-4.png"
+  - "/images/projects/project-11/prolog-5.png"
+  - "/images/projects/project-11/prolog-6.png"
+team:
+  - name: "Viresh Bhurke"
+    role: "Language Engineer & Runtime Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/vireshbhurke/"
+link: "https://github.com/dugojugo/SER502-SanSkript-Team25"
+videoLink: "https://www.youtube.com/watch?v=AKYJ-KSg5kY"
+---
+
+## Overview
+
+**SanSkript** is a custom-designed **domain-specific programming language (DSL)** created as part of the SER502 compiler design course project. The language supports conditional logic, loops, variable assignments, and arithmetic operations. The interpreter leverages **SWI Prolog** for symbolic reasoning and syntax handling, while **Python** serves as the runtime engine to execute `.skt` programs.
+
+## Key Features
+
+- **Custom Language Syntax**: SanSkript introduces a clean, minimalistic syntax for teaching and experimenting with core programming logic.
+- **Interpreter Workflow**:
+  - **Lexical Analysis**: Token generation and classification from `.skt` source files.
+  - **Prolog-based Parsing**: Uses Prolog facts and rules to parse language constructs.
+  - **Python Runtime Execution**: Executes parsed code via a Python bridge calling into Prolog-based evaluation logic.
+- **Sample Programs**: Includes examples like `factorial.skt`, `fibonacci.skt`, and `calc.skt` for demonstration and testing.
+- **Intermediate Outputs**:
+  - Tokens file (`tokens_output.txt`)
+  - Intermediate parse trees in `.sktc` files
+- **Cross-Tool Integration**: Combines logic programming with scripting, demonstrating hybrid system design.
+
+## Technologies Used
+
+- **Python 3**: Primary environment and glue logic to run and test `.skt` files.
+- **SWI Prolog**: Responsible for grammar parsing, logical evaluation, and flow control interpretation.
+- **Custom Tooling**: Scripts for token generation, parse tree construction, and runtime management.
+
+## Outcome
+This project successfully demonstrates the power of combining declarative logic with imperative scripting to interpret custom language designs. SanSkript acts as an educational tool for compiler construction and runtime theory, with extensibility for further language features like functions and recursion.
+
+--- 
