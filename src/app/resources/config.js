@@ -1,5 +1,5 @@
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "https://your-project-name.vercel.app";
+const baseURL = process.env.NEXT_PUBLIC_BASE_URL || "https://viresh-bhurke-portfolio.vercel.app";
 
 const routes = {
   "/": true,
