@@ -366,7 +366,7 @@ const about = {
       },
       {
         title: "TypeScript",
-        description:<>Used for building modular and type-safe logic across web and game projects. Applied in developing procedural systems, UI interactions, and collectible tracking in <b>Maze Scrapper</b> for the Meta Horizon Creator Competition.
+        description:<>Used for building modular and type-safe logic across web and game projects. Applied to develope procedural systems, UI interactions, and collectible tracking in <b>Maze Scrapper</b> for the Meta Horizon Creator Competition.
           </>,
         proficiency: 5,
         images: [],
