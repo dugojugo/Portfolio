@@ -363,6 +363,13 @@ const about = {
         description: <>Analyze data, automate workflows, and visualize results in research and scientific computing environments.</>,
         proficiency: 4,
         images: [],
+      },
+      {
+        title: "TypeScript",
+        description:<>Used for building modular and type-safe logic across web and game projects. Applied in developing procedural systems, UI interactions, and collectible tracking in <b>Maze Scrapper</b> for the Meta Horizon Creator Competition.
+          </>,
+        proficiency: 5,
+        images: [],
       }
     ],
   },
